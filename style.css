@@ -1,0 +1,356 @@
+body {
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header y navegación */
+header {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* Navegación principal */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0f1a3b;
+  margin: 0;
+  border-top: 3px solid #f0f0f0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: background-color 0.3s, border-bottom 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+  background-color: #1e2b4a;
+}
+
+nav ul li a.active {
+  background-color: #102041;
+  border-bottom: 3px solid #e91e63; /* color destacado */
+  font-weight: bold;
+}
+
+/* Contenido principal */
+.container,
+.contenido-principal {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.07);
+  border-radius: 10px;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Videos */
+.video,
+.video-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.video iframe,
+.video-section iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Imágenes */
+img {
+  max-width: 30%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.slide-img {
+  margin: 0 10px;
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.slide-img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea, select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #0f3460;
+  outline: none;
+}
+
+button, .btn {
+  padding: 12px 25px;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background-color: #c72c46;
+}
+
+/* Secciones médicas y productos */
+.medical-section, .product-list {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0f3460;
+}
+
+.img-medica {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .slide-img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .container, .contenido-principal {
+    margin: 20px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  td:before {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #0f3460;
+  }
+
+  /* Add specific labels if needed */
+}
+.hero {
+  position: relative;
+  background-image: url('ruta/a/tu/imagen.jpg'); /* Cambia por la ruta de tu portada */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-content h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.hero-content .btn {
+  background-color: #e91e63;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #c2185b;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.imagenChica {
+  width: 500px;
+  height: 450px;
+}
+.calendario {
+  padding: 40px 20px;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.calendario h2 {
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 2em;
+}
+
+.grid-calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.dia {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 15px 10px;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+}
+
+.clase {
+  background-color: #f4f4f4;
+  padding: 15px 10px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-size: 0.95em;
+  color: #333;
+}
+
+.clase.descanso {
+  background-color: #ddd;
+  font-style: italic;
+  color: #777;
+}
+.contenedor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* también lo puedes usar si quieres centrar verticalmente */
+}
